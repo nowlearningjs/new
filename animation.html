@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>animation</title>
+        <style>
+            
+            /*The suggestion on variables was very helpful
+            Thank you for it! It helped with this assignment*/
+
+            /*The colors dont exactly look the same, and mine seems to be a bit brighter,
+            also the div can be seen being rotated if you look close enough, if these are problems let me know*/
+
+            /*If its not a problem i might leave some parts of the code ugly
+            without making it cleaner, if it is a problem also let me know*/
+
+            @keyframes the-animation {
+                0%{
+                    transform: translateX(50%) rotate(0deg);
+                }
+                100%{
+                    transform: translateX(50%) rotate(360deg);
+                }
+            }
+
+            @keyframes pulse {
+                0%{
+                    transform: translateX(50%) scale(0.05);
+                }
+                100%{
+                    transform: translateX(50%) scale(0.5);
+                }
+            }
+
+            body {
+                height: 100vh;
+                margin: 0px;
+                background-color: #050210;
+            }
+
+            #first-div {
+                height: 100%;
+                width: 100%;
+                background-color: #050210;
+            }
+
+            #second-div {
+                --first-var: 0deg;
+                --third-var: 240deg;
+                --transparent-var: 70.71%;
+                position: absolute;
+                height: 100vh;
+                width: 100vh;
+                background:
+                radial-gradient(circle, transparent 35%, #05021077 35%),
+                linear-gradient(var(--first-var), rgb(251, 93, 173) 30%, transparent 60%),
+                linear-gradient(var(--third-var),  rgb(185, 122, 255) 30%, transparent 50%)
+                rgb(85, 251, 159);
+                filter: blur(1px) brightness(1.2) saturate(1.5);
+                transform-style: preserve-3d;
+                animation: the-animation 1s linear 0s infinite;
+            }
+
+            #second-div::after {
+                content: '';
+                display: block;
+                margin: 0px;
+                height: 100vh;
+                width: 100vh;
+                background: radial-gradient(circle, transparent 35%, #050210 50%), 
+                radial-gradient(circle, transparent 35%, #050210 60%), 
+                radial-gradient(circle, #050210 30%, transparent 30%, transparent 35%, #050210 60%);
+                filter: saturate(0.66) brightness(0.85);
+            }
+
+            #third-div {
+                position:absolute;
+                height: 100vh;
+                width: 100vh;
+                background: radial-gradient(circle, #05021010 50%,transparent 50%);
+                filter: invert(1) brightness(0.5);
+                animation: pulse 1s linear 0s infinite;
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div id="first-div">
+            <div id="second-div"></div>
+            <div id="third-div"></div>
+        </div>
+    </body>
+</html>
