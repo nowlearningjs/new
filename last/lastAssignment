@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design</title>
+    
+        <style>
+
+            /*since it wasnt a requirement i didnt optimize it for televisions*/
+
+            h1 {
+                text-align: center;
+            }
+
+            body {
+                margin: 0px;
+                width: 100vw;
+            }
+
+            #div-flex-container {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                width: 100%;
+            }
+
+            figure {
+                margin: 0px;
+                text-align: center;
+            }
+
+            figcaption {
+                text-align: center;
+                background: #fff;
+                border-bottom-left-radius: 24px;
+                border-bottom-right-radius: 24px;
+            }
+
+            div div {
+                margin: 1vw;
+                background: #00aeff;
+                box-sizing: border-box;
+                width: 100%;
+                border-radius: 24px;
+                box-shadow: 0px 0px 24px 1px #474747;
+            }
+            
+            @media (min-device-width: 415px) {
+
+                h1 {
+                    margin-left: 2vw;
+                    text-align: initial;
+                }
+
+                #div-flex-container {
+                    justify-content: start;
+                }
+
+                div div {
+                    width: 25%;
+                    margin: 1vw 3vw;
+                }
+
+                img {
+                    width: 100%;
+                }
+
+            }
+            
+            @media (min-device-width: 1024px) {
+                div div {
+                    width: 15%;
+                    margin: 6vh 2vw 6vh 2vw;
+                }
+
+                p {
+                    margin: 8px;
+                }
+            }
+        </style>
+    
+    </head>
+    <body>
+        <h1>Gallery Heading</h1>
+        <div id="div-flex-container">
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+            <div>
+                <figure>
+                    <img src="placeholder-image.png" alt="placeholder-image">
+                    <figcaption>Image Title</figcaption>
+                </figure>
+            </div>
+        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi assumenda doloribus sunt ab eveniet tenetur odit, ipsa unde nesciunt distinctio consequuntur error, labore eligendi tempore nisi quasi libero illum.
+        Dolores fuga enim voluptatem qui eligendi dignissimos saepe repudiandae aspernatur deserunt commodi perspiciatis obcaecati aliquid quis explicabo itaque voluptas optio doloremque eveniet ipsam accusantium, ea vitae eum minus id. Assumenda!
+        Dolorem debitis inventore quos modi asperiores delectus hic recusandae, deleniti minima architecto, vero nostrum exercitationem nesciunt, magnam repellendus id ex odio magni nisi ea. Molestiae, incidunt accusamus. Fuga, molestiae aut!
+        Nulla vitae facilis ad tempore adipisci. Perferendis modi ipsa id aspernatur, quaerat nulla repellat corporis consequuntur doloremque, voluptatum doloribus. Dolore sed beatae iusto a labore repellendus ex qui! Repellat, assumenda.
+        At aliquid officia nihil sed impedit, alias non magnam dolores id delectus. Molestias obcaecati odit ullam asperiores veniam, non, repudiandae rem dignissimos dolor, voluptatem ut fugit sint distinctio. Ullam, odio.</p>
+    </body>
+</html>
